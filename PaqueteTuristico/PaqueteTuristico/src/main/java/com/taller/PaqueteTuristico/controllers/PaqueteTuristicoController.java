@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/paquetes")
-@CrossOrigin(origins = "http://localhost:5500")
+
 public class PaqueteTuristicoController {
 
     @Autowired
