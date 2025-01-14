@@ -35,6 +35,14 @@ spring.datasource.password=<CONTRASEÑA>
 
 ## Instrucciones de Ejecución
 
+### Paso 0: Construir aplicacion .jar
+
+Usamos el siguiente comando par ala creacion de la carpeta target que contiene la aplicacion .jar necesaria para el dockerizado:
+
+```bash
+mvn clean install
+```
+
 ### Paso 1: Configuración del Docker Compose
 
 
