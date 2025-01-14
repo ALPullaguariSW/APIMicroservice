@@ -10,6 +10,14 @@ Este proyecto consiste en un sistema de gestión de paquetes turísticos desarro
 - **Puerto por defecto del servicio**: `8003`
 
 ---
+## Notas sobre las carpetas y archivos ignorados por Git
+
+Este proyecto ignora ciertas carpetas y archivos para mantener la seguridad y la configuración local (por ejemplo, credenciales y dependencias de desarrollo). A continuación, se detallan las carpetas que debes generar o configurar:
+
+1. **`target/`**: Esta carpeta contiene los archivos generados por el proceso de construcción del proyecto (compilación, empaquetado). Si no se encuentra, puedes generarla ejecutando el comando `mvn clean install` o `docker-compose build`.
+
+2. **Archivos de configuración sensibles**: Las credenciales de conexión a la base de datos se encuentran en el archivo `src/main/resources/application.properties`. Asegúrate de configurar las credenciales de acuerdo con tu entorno antes de ejecutar el proyecto.
+
 
 ## Requisitos Previos
 
