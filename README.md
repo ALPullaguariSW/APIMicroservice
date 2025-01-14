@@ -65,13 +65,17 @@ Esto levantará el contenedor de la aplicación y lo conectará a la base de dat
 A continuación, puedes agregar imágenes del proceso de ejecución:
 
 1. **Inicio de Docker Compose:**
-   ![Inicio del Docker Compose](ruta/a/imagen1.png)
+   ![Inicio del Docker Compose](Assets/imagen1.png)
+   ![Contenedor Up](Assets/imagen2.png)
 
 2. **Conexión Exitosa a la Base de Datos:**
-   ![Conexión Exitosa](ruta/a/imagen2.png)
+   ![Conexión Exitosa](Assets/imagen7.png)
 
 3. **Prueba de Endpoint:**
-   ![Prueba del Endpoint](ruta/a/imagen3.png)
+   ![Prueba del Endpoint GET](Assets/imagen3.png)
+   ![Prueba del Endpoint GET](Assets/imagen4.png)
+   ![Prueba del Endpoint GET](Assets/imagen5.png)
+   ![Prueba del Endpoint GET](Assets/imagen6.png)
 
 ---
 
