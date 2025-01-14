@@ -56,7 +56,7 @@ Esto levantará el contenedor de la aplicación y lo conectará a la base de dat
 ### Paso 4: Verificar la Ejecución
 
 1. Abre un navegador web.
-2. Ve a la dirección `http://localhost:8080/api/paquetes` para probar el endpoint de listado de paquetes turísticos.
+2. Usa la dirección `http://localhost:8080/api/paquetes` para probar el endpoint de listado de paquetes turísticos con *POSTMAN* por ejemplo.
 
 ---
 
