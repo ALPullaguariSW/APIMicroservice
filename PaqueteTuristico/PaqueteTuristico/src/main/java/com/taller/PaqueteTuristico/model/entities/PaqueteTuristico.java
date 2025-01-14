@@ -2,12 +2,12 @@ package com.taller.PaqueteTuristico.model.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
-import org.springframework.format.annotation.NumberFormat;
+
 
 import java.util.Date;
 
 @Entity
-@Table(name = "paquetes_turisticos")
+@Table(name = "paquetesTuristicos")
 public class PaqueteTuristico {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,30 +22,18 @@ public class PaqueteTuristico {
     @Column(name = "descripcion", length = 500)
     private String descripcion;
 
-    // Validación para asegurarse de que la duración sea un número positivo
     @NotNull(message = "La duración no puede ser nula")
     @Min(value = 1, message = "La duración debe ser al menos 1 día")
     @Positive(message = "La duración debe ser un número positivo")
-    @Column(name = "duracion_dias", nullable = false)
+    @Column(name = "duracionDias", nullable = false)
     private int duracionDias;
 
-    // Validación para asegurarse de que la fecha de inicio sea una fecha futura o presente
+
     @NotNull(message = "La fecha de inicio no puede ser nula")
     @FutureOrPresent(message = "La fecha de inicio debe ser hoy o una fecha futura")
     @Temporal(TemporalType.DATE)
-    @Column(name = "fecha_inicio", nullable = false)
+    @Column(name = "fechaInicio", nullable = false)
     private Date fechaInicio;
-
-    // Validación para asegurarse de que el precio sea un número positivo
-    @NotNull(message = "El precio no puede ser nulo")
-    @Positive(message = "El precio debe ser un número positivo")
-    @Column(name = "precio", nullable = false)
-    private Double precio;
-
-    // Validación adicional para verificar que el código de paquete sea numérico
-    @Pattern(regexp = "^\\d+$", message = "El código de paquete debe ser numérico")
-    @Column(name = "codigo_paquete", nullable = false, length = 20)
-    private String codigoPaquete;
 
     public Long getId() {
         return id;
