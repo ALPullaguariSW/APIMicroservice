@@ -12,4 +12,5 @@ public interface PaqueteTuristicoService {
     PaqueteTuristico save(PaqueteTuristico paquete);
     Optional<PaqueteTuristico> findById(Long id);
     void deleteById(Long id);
+    PaqueteTuristico update(Long id, PaqueteTuristico paquete);
 }

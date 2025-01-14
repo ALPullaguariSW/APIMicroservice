@@ -1,19 +1,19 @@
 version: '3'
 services:
-  mysql:
-     image: mysql:8
-     environment:
-       MYSQL_ROOT_PASSWORD: 12345
-       MYSQL_DATABASE: taller2025
-     ports:
-       - "3306:3306"
-     networks:
-       - my-network
+  #mysql:
+  #   image: mysql:8
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: 12345
+  #     MYSQL_DATABASE: taller2025
+  #   ports:
+  #     - "3306:3306"
+  #   networks:
+  #     - my-network
   app:
     image: java-app-image
-    build: src
+    build: .
     ports:
-      - "8002:8002"
+      - "8003:8003"
     environment:
       - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/taller2025
     networks:
